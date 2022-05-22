@@ -22,9 +22,9 @@ html {
     --header2: calc(3.5rem + 1vw);
     --header3: calc(3rem + 1vw);
     --header4: calc(2.4rem + 1vw);
-    --header5: calc(2rem + 1vw);
+    --header5: calc(1.6rem + 1vw);
     --text: calc(1.3rem + 1vw);
-    --big: calc(2.4rem + 1vw);
+    --big: calc(7rem + 1vw);
     --special-color: #906272;
     --background-color: #414141;
     --grey-text: #525252;
@@ -228,4 +228,74 @@ h1 {
 .gallery-text h3 {
     padding-bottom: 3rem;
     font-size: var(--header3);
+}
+
+/* Contact Section */
+.contact {
+    min-height: 90vh;
+    width: 100%;
+}
+.contact-wrapper {
+    display: flex;
+}
+.contact-info {
+    flex: 3 1 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info h2 {
+    margin-top: 4rem;
+}
+.contact-info form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.contact-info form input {
+    background: var(--background-color);
+    border: none;
+    padding: 1rem;
+    margin: 3rem 0rem;
+}
+.contact-info form button {
+    background: var(--special-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+}
+.contact-img {
+    flex: 1 1 40rem;
+}
+.contact-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+span {
+    display: block;
+    color: var(--special-color);
+    font-size: var(--big);
+}
+
+/* Footer Section */
+footer {
+    background: var(--background-color);
+    color: white;
+}
+.footer-wrapper {
+    width: 90%;
+    min-height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.footer-wrapper h5 {
+    flex: 2 1 40rem;
+}
+.footer-wrapper .socials {
+    flex: 1.5 1 40rem;
+    display: flex;
+    justify-content: space-around;
 }
