@@ -69,3 +69,49 @@ nav {
 .intro-text,.intro-images {
     flex: 1 1 40rem;
 }
+
+#plant-left {
+    animation: plant 1.5s ease infinite alternate;
+}
+
+#plant-right {
+    animation: plant 1.5s ease infinite alternate 0.5s;
+}
+
+#me {
+    animation: me 1.5s ease infinite alternate;
+    transform-origin: bottom;
+}
+
+#clock-arrow {
+    animation: clock 1.8s linear infinite;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+@keyframes clock {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes me{
+    from{
+        transform: rotate(-5deg);
+    }
+    to{
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes plant{
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(-30%);
+    }
+}

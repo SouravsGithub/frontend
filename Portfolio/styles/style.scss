@@ -17,3 +17,55 @@ $grey-text: #2c2c2c;
 
 @import 'global';
 @import 'intro';
+
+@media screen and (max-width: 1335px) {
+    html {
+        font-size: 51%;
+    }
+    .splash {
+        display: none;
+    }
+    svg {
+        width: 80%;
+    }
+    nav {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    html {
+        font-size: 45%;
+    }
+    .main-head{
+        width: 100%;
+    }
+    nav {
+        margin: 2rem;
+        .logo {
+            @include flex(center, center, column);
+            flex: 1 1 30rem;
+            margin-top: 2rem;
+        }
+        ul {
+            flex: 1 1 71rem;
+            margin: 2rem 0rem;
+        }
+    }
+    .intro-images {
+        text-align: center;
+    }
+    .intro-text {
+        margin-top: 5rem;
+        text-align: center;
+    }
+    .intro-social {
+        @include flex(center, center, row);
+        a {
+            margin: 2rem;
+        }
+    }
+    svg{
+        height: 60%;
+    }
+}
